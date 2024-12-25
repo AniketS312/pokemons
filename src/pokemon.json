@@ -1,0 +1,64 @@
+
+[
+    {
+        "name": "axew",
+        "url": "https://pokeapi.co/api/v2/pokemon/610/",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/610.png"
+    },
+    {
+        "name": "gyarados",
+        "url": "https://pokeapi.co/api/v2/pokemon/130/",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png"
+    },
+    {
+        "name": "bagon",
+        "url": "https://pokeapi.co/api/v2/pokemon/371/",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/371.png"
+    },
+    {
+        "name": "beldum",
+        "url": "https://pokeapi.co/api/v2/pokemon/374/",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/374.png"
+    },
+    {
+        "name": "dratini",
+        "url": "https://pokeapi.co/api/v2/pokemon/147/",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png"
+    },
+    {
+        "name": "eevee",
+        "url": "https://pokeapi.co/api/v2/pokemon/133/",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"
+    },
+    {
+        "name": "gible",
+        "url": "https://pokeapi.co/api/v2/pokemon/443/",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/443.png"
+    },
+    {
+        "name": "ralts",
+        "url": "https://pokeapi.co/api/v2/pokemon/280/",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/280.png"
+    },
+    {
+        "name": "pawniard",
+        "url": "https://pokeapi.co/api/v2/pokemon/624/",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/624.png"
+    },
+    {
+        "name": "frigibax",
+        "url": "https://pokeapi.co/api/v2/pokemon/996/",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/996.png"
+    },
+    {
+        "name": "cranidos",
+        "url": "https://pokeapi.co/api/v2/pokemon/408/",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/408.png"
+    },
+    {
+        "name": "kubfu",
+        "url": "https://pokeapi.co/api/v2/pokemon/891/",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/891.png"
+    }
+
+]
