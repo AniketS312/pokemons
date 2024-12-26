@@ -6,9 +6,9 @@
         "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/610.png"
     },
     {
-        "name": "gyarados",
-        "url": "https://pokeapi.co/api/v2/pokemon/130/",
-        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png"
+        "name": "magikarp",
+        "url": "https://pokeapi.co/api/v2/pokemon/129/",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png"
     },
     {
         "name": "bagon",
