@@ -1,11 +1,13 @@
 const pokemonList = document.getElementById('pokemon-list');
-const pokemonData =fetch("./src/pokemon.json")
-.then(response => response.json())
-.then(data => inputFetchedData(data))
-.catch(error => console.error('Error:', error));
+
+// Working fetch from local file ----------------------------------------------
+// const backupData = fetch("./src/pokemon.json")
+// .then(response => response.json())
+// .then(data => inputFetchedData(data))
+// .catch(error => console.error('Error:', error));
 
 
-
+// Inputs fetched data into the DOM -------------------------------------------
 function inputFetchedData(data) {
     data.forEach(pokemon => {
         const listItem = document.createElement('li');
@@ -17,7 +19,7 @@ function inputFetchedData(data) {
     pokemonList.style.paddingBottom = '5rem';
 }
 
-
+// add pokemon IMG inputFetchedData PT1 ------------------------------------------------
 function addImage(pokemon) {
     const image = document.createElement('img');
     image.classList.add('aspect-[14/13]', 'w-full', 'object-cover');
@@ -27,7 +29,7 @@ function addImage(pokemon) {
 }
 
 
-
+// add pokemon LINK inputFetchedData PT2 ------------------------------------------------
 function addLink(pokemon) {
     const link = document.createElement('a');
     link.classList.add('mt-6', 'text-lg/8', 'font-semibold', 'tracking-tight', 'text-white', 'text-center', 'capitalize', 'block');
@@ -37,17 +39,29 @@ function addLink(pokemon) {
     return link;
 }
 
-// function addType(pokemon) {
-//     const type = document.createElement('a');
-//     type.attributes
-//     type.classList.add('text-base/7', 'text-gray-300');
-//     type.innerText = "Link";
-//     return type;
-// }
 
-// function addName(pokemon) {
-//     const name = document.createElement('h3');
-//     name.classList.add('mt-6', 'text-lg/8', 'font-semibold', 'tracking-tight', 'text-white', 'text-center');
-//     name.innerText = pokemon.name;
-//     return name;
-// }
+// Fetchs data from JSONBin.io ------------------------------------------------
+async function getJSONBin() {
+    const url = 'https://api.jsonbin.io/v3/b/677c9ed5e41b4d34e4710c65';
+    const headers = {
+        "X-Access-Key": "$2a$10$BrpvJ5jwEvoRMRVWxcvUD.tBfRzfOWPKVubo6s7N3MZUiz3/MQaIq",
+        "Content-Type": "application/json"
+    };
+
+    await fetch(url, {
+        method: 'GET',
+        headers: headers
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.json();
+    })
+    .then(data => inputFetchedData(data.record))
+    .catch(error => console.error('Error:', error));
+}
+
+getJSONBin();
+
+
